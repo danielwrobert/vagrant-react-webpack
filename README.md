@@ -28,7 +28,7 @@ var webpack = require('webpack');
 
 module.exports = {
   entry: {
-    'react-reading-time': [
+    'vagrant-react-webpack': [
       'webpack-dev-server/client?http://localhost:8881/',
       'webpack/hot/only-dev-server',
       './app/main.js'
@@ -57,7 +57,7 @@ module.exports = {
   devtool: "eval-source-map"
 };
 ```
-Note: If you are shelled into your Vagrant instance, you can also do this from the aforementioned shared directory. You may also want to change the `'./app/main.js'` line above to point to your app's main entry point.
+Note: If you are shelled into your Vagrant instance, you can also do this from the aforementioned shared directory. You also likely want to change the `'./app/main.js'` and the `vagrant-react-webpack` lines above to match with your projects name and configuration.
 
 
 ### Running the Webpack Dev Server

@@ -67,7 +67,7 @@ Vagrant.configure(2) do |config|
   config.vm.provision "shell", privileged: false, inline: <<-SHELL
     sudo apt-get update
     sudo apt-get install -y build-essential curl
-    curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.25.4/install.sh | bash
+    curl -o- https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash
     source ~/.nvm/nvm.sh
     nvm install node
     nvm alias default node
@@ -75,9 +75,8 @@ Vagrant.configure(2) do |config|
     sudo apt-get install git-all
 
     cd /vagrant
-    npm init --yes
     npm install -g webpack babel
-    npm install --save-dev webpack react react-dom babel babel-core babel-loader babel-preset-es2015 babel-preset-react webpack-dev-server react-hot-loader
+    npm install
     npm shrinkwrap
   SHELL
 end
