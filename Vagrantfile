@@ -78,6 +78,6 @@ Vagrant.configure(2) do |config|
     npm install -g webpack babel
     npm install
     npm shrinkwrap --dev
-    curl -L https://gist.githubusercontent.com/danielwrobert/cac4a4a44f1430339861/raw/0b3f42e8a9402385951f87191172d954d00c0852/webpack.config.js > webpack.config.js
+    curl -L https://gist.githubusercontent.com/danielwrobert/cac4a4a44f1430339861/raw/c86a20ddf8cf1e701266349ec3c1226297473368/webpack.config.js > webpack.config.js
   SHELL
 end
