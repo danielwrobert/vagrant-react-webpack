@@ -22,7 +22,7 @@ Vagrant.configure(2) do |config|
   # Create a forwarded port mapping which allows access to a specific port
   # within the machine from a port on the host machine. In the example below,
   # accessing "localhost:8080" will access port 80 on the guest machine.
-  config.vm.network "forwarded_port", guest: 4000, host: 4000
+  config.vm.network "forwarded_port", guest: 8881, host: 8881
 
   # Create a private network, which allows host-only access to the machine
   # using a specific IP.
@@ -77,6 +77,7 @@ Vagrant.configure(2) do |config|
     cd /vagrant
     npm install -g webpack babel
     npm install
-    npm shrinkwrap
+    npm shrinkwrap --dev
+    curl -L https://gist.githubusercontent.com/danielwrobert/cac4a4a44f1430339861/raw/0b3f42e8a9402385951f87191172d954d00c0852/webpack.config.js > webpack.config.js
   SHELL
 end
