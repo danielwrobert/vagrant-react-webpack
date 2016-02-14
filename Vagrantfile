@@ -66,7 +66,7 @@ Vagrant.configure(2) do |config|
   # documentation for more information about their specific syntax and use.
   config.vm.provision "shell", privileged: false, inline: <<-SHELL
     sudo apt-get update
-    sudo apt-get install -y build-essential curl
+    sudo apt-get install -y build-essential curl vim
     curl -o- https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash
     source ~/.nvm/nvm.sh
     nvm install node

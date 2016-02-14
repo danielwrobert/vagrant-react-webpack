@@ -45,6 +45,9 @@ module.exports = {
     extensions: ['', '.js', '.jsx', '.es6'],
     modulesDirectories: ['node_modules']
   },
+  devServer: {
+    host: "0.0.0.0"
+  },
   module: {
     loaders: [
       { test: /\.jsx$|\.es6$|\.js$/, loaders: ['react-hot', 'babel-loader'], exclude: /node_modules/, query: { presets: ['react', 'es2015'] } },
