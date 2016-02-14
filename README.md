@@ -47,7 +47,7 @@ module.exports = {
   },
   module: {
     loaders: [
-      { test: /\.jsx$|\.es6$|\.js$/, loaders: ['react-hot', 'babel-loader'], exclude: /node_modules/ },
+      { test: /\.jsx$|\.es6$|\.js$/, loaders: ['react-hot', 'babel-loader'], exclude: /node_modules/, query: { presets: ['react', 'es2015'] } },
       { test: /\.scss$|\.css$/, loader: 'style-loader!style!css!sass' }
     ]
   },
