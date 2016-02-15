@@ -9,7 +9,7 @@ module.exports = {
   },
   output: {
     filename: 'public/main.js',
-    sourceMapFilename: 'public/main.js.map'
+    sourceMapFilename: 'main.js.map'
   },
   resolve: {
     extensions: ['', '.js', '.jsx', '.es6'],
