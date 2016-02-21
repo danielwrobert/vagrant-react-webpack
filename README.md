@@ -14,7 +14,7 @@ If you don't already have those, visit the downloads pages below and follow the 
 * [Virtualbox Downloads](https://www.virtualbox.org/wiki/Downloads)
 * [Vagrant Downloads](https://www.vagrantup.com/downloads.html)
 
-Once you're set up with those, you can download the `Vagrantfile` from this repo, place it in the root directory of your project, and run `vagrant up` from your Terminal application.
+Once you're set up with those, you can download/clone this repo to the root directory of your project, and run `vagrant up` from your Terminal application.
 
 After everything installs, you can run `vagrant ssh`. This will shell you in to your local Vagrant instance. Have a look around, if you'd like, but the main folder you want to be aware of is the shared `/vagrant` directory. This directory is shared between your virtual machine and your local project directory.
 
