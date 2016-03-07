@@ -31,3 +31,7 @@ To run the Webpack Dev Server, you will want to move into the aforementioned sha
 Once you have the Webpack Dev Server up and running, you can jump over to your browser and visit `localhost:8881` and see that appication is running!
 
 That's all there is to it. Now you have Node.js, NVM, React.js, Webpack, Ruby, and Sass installed in a virtual machine and your local system environment is left untouched!
+
+### Running the Webpack Dev Server
+
+Running the Webpack Dev Server will not actually generate the output files. Instead it keeps and serves the resulting files from memory. When you're ready to generate the final output files for your project, run `npm run bundle`. This will generate everything into the `public` directory and you can distribute from there!
