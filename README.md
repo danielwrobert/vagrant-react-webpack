@@ -1,6 +1,6 @@
 # Vagrant React-Webpack
 
-A basic Vagrant setup with Node.js, NVM, React.js, Webpack, Ruby, and Sass.
+A basic Vagrant setup with Node.js, NVM, React.js, Webpack, and Sass.
 
 Uses the ubunty/trusty64 Vagrant box for the official Ubuntu Server 14.04 LTS (Trusty Tahr) builds.
 
