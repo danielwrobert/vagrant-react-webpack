@@ -36,6 +36,3 @@ That's all there is to it. Now you have Node.js, NVM, React.js, Webpack, and Pos
 
 Running the Webpack Dev Server will not actually generate the output files. Instead it keeps and serves the resulting files from memory. When you're ready to generate the final output files for your project, run `npm run bundle`. This will generate everything into the `public` directory and you can distribute from there!
 
-## To Do
-
-- Remove dev dependencies from package.json and `npm install --save-dev` in Vagrantfile to get latest versions.
