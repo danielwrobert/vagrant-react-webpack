@@ -1,6 +1,6 @@
 # Vagrant React-Webpack
 
-A basic Vagrant setup with Node.js, NVM, React.js, Webpack, and Sass.
+A basic Vagrant setup with Node.js, NVM, React.js, Webpack, and PostCSS.
 
 Uses the ubunty/trusty64 Vagrant box for the official Ubuntu Server 14.04 LTS (Trusty Tahr) builds.
 
@@ -30,7 +30,7 @@ To run the Webpack Dev Server, you will want to move into the aforementioned sha
 
 Once you have the Webpack Dev Server up and running, you can jump over to your browser and visit `localhost:8881` and see that appication is running!
 
-That's all there is to it. Now you have Node.js, NVM, React.js, Webpack, Ruby, and Sass installed in a virtual machine and your local system environment is left untouched!
+That's all there is to it. Now you have Node.js, NVM, React.js, Webpack, and PostCSS installed in a virtual machine and your local system environment is left untouched!
 
 ### Running the Webpack Dev Server
 
