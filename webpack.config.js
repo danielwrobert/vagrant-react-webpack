@@ -1,6 +1,7 @@
-var ExtractTextPlugin = require("extract-text-webpack-plugin");
-var autoprefixer = require('autoprefixer');
-var precss = require('precss');
+var ExtractTextPlugin = require( 'extract-text-webpack-plugin' );
+var autoprefixer = require( 'autoprefixer' );
+var precss = require( 'precss' );
+var path = require( 'path' );
 
 module.exports = {
   entry: {
@@ -11,7 +12,9 @@ module.exports = {
   },
 
   output: {
-    filename: 'public/js/main.js',
+    path: path.resolve( __dirname, 'public' ),
+    publicPath: '/js/',
+    filename: 'main.js',
     sourceMapFilename: 'main.js.map'
   },
 
