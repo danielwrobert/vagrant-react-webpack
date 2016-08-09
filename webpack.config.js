@@ -34,7 +34,7 @@ module.exports = {
   devtool: "eval",
 
   postcss: function() {
-    return [autoprefixer, precss];
+    return [autoprefixer( { browsers: ['last 2 versions'] } ), precss];
   },
 
   plugins: [
