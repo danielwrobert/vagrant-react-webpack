@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
-class ReactReadingTime extends React.Component {
+class App extends React.Component {
 	render() {
 		return (
 			<div className='container'>
@@ -11,4 +11,4 @@ class ReactReadingTime extends React.Component {
 	}
 }
 
-ReactDOM.render( <ReactReadingTime />, document.getElementById( 'react' ) );
+ReactDOM.render( <App />, document.getElementById( 'react' ) );
