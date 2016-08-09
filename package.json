@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --host 0.0.0.0 --port 8881",
+    "start": "webpack-dev-server --watch-poll --content-base public/ --host 0.0.0.0 --port 8881",
     "bundle": "NODE_ENV=production webpack -p",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -25,6 +25,7 @@
     "extract-text-webpack-plugin": "^1.0.1",
     "file-loader": "^0.8.4",
     "img-loader": "^1.2.0",
+    "path": "^0.12.7",
     "postcss-loader": "^0.8.1",
     "precss": "^1.4.0",
     "react": "^0.14.7",
