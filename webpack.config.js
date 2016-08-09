@@ -1,6 +1,7 @@
 var ExtractTextPlugin = require( 'extract-text-webpack-plugin' );
 var autoprefixer = require( 'autoprefixer' );
 var precss = require( 'precss' );
+var svgo = require( 'postcss-svgo' );
 var path = require( 'path' );
 
 module.exports = {
@@ -37,7 +38,26 @@ module.exports = {
   devtool: "eval",
 
   postcss: function() {
-    return [autoprefixer( { browsers: ['last 2 versions'] } ), precss];
+    return [
+        autoprefixer( { browsers: ['last 2 versions'] } ),
+        precss,
+        svgo( {
+            plugins: [{
+                removeDoctype: false
+            }, {
+                removeComments: false
+            }, {
+                cleanupNumericValues: {
+                    floatPrecision: 2
+                }
+            }, {
+                convertColors: {
+                    names2hex: false,
+                    rgb2hex: false
+                }
+            }]
+        } )
+    ];
   },
 
   plugins: [
