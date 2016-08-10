@@ -23,17 +23,13 @@
     "babel-preset-react": "^6.5.0",
     "css-loader": "^0.23.0",
     "extract-text-webpack-plugin": "^1.0.1",
-    "file-loader": "^0.8.4",
-    "img-loader": "^1.2.0",
     "path": "^0.12.7",
     "postcss-loader": "^0.8.1",
-    "postcss-svgo": "^2.1.4",
     "precss": "^1.4.0",
     "react": "^0.14.7",
     "react-dom": "^0.14.7",
     "source-map-loader": "^0.1.5",
     "style-loader": "^0.13.0",
-    "url-loader": "^0.5.6",
     "webpack": "^1.12.13",
     "webpack-dev-server": "^1.14.1"
   }
