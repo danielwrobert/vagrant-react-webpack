@@ -4,6 +4,8 @@ A basic Vagrant setup with Node.js, NVM, React.js, Webpack, and PostCSS.
 
 Uses the ubunty/trusty64 Vagrant box for the official Ubuntu Server 14.04 LTS (Trusty Tahr) builds.
 
+_Note: While this box includes PostCSS, it sticks with just a couple basic plugins - Autoprefixer and PreCSS. See [this Gist](https://gist.github.com/danielwrobert/cac4a4a44f1430339861) for an example with additional optimization plugins._
+
 
 ## Getting started
 
