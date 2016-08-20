@@ -65,18 +65,26 @@ Vagrant.configure(2) do |config|
   # Puppet, Chef, Ansible, Salt, and Docker are also available. Please see the
   # documentation for more information about their specific syntax and use.
   config.vm.provision "shell", privileged: false, inline: <<-SHELL
+    echo "Provisioning Virtual Machine..."
     sudo apt-get update
-    sudo apt-get install -y build-essential curl vim
+
+    echo "Installing developer packages..."
+    sudo apt-get install build-essential curl vim -y > /dev/null
+
+    echo "Installing Node and NVM..."
     curl -o- https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash
     source ~/.nvm/nvm.sh
     nvm install node
     nvm alias default node
 
-    sudo apt-get install git-all
+    echo "Installing Git..."
+    sudo apt-get install git -y > /dev/null
 
     cd /vagrant
-    npm install -g webpack
-    npm install
+
+    echo "Installing Node dependencies..."
+    npm install -g webpack -y > /dev/null
+    npm install -y > /dev/null
     npm shrinkwrap --dev
   SHELL
 end
