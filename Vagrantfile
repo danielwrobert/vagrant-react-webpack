@@ -78,13 +78,13 @@ Vagrant.configure(2) do |config|
     nvm alias default node
 
     echo "Installing Git..."
-    sudo apt-get install git -y > /dev/null
+    sudo apt-get install git-all -y > /dev/null
 
     cd /vagrant
 
     echo "Installing Node dependencies..."
-    npm install -g webpack -y > /dev/null
-    npm install -y > /dev/null
+    npm install -g webpack
+    npm install
     npm shrinkwrap --dev
   SHELL
 end
