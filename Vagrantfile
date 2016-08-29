@@ -71,14 +71,14 @@ Vagrant.configure(2) do |config|
     echo "Installing developer packages..."
     sudo apt-get install build-essential curl vim -y > /dev/null
 
+    echo "Installing Git..."
+    sudo apt-get install git -y > /dev/null
+
     echo "Installing Node and NVM..."
     curl -o- https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash
     source ~/.nvm/nvm.sh
     nvm install node
     nvm alias default node
-
-    echo "Installing Git..."
-    sudo apt-get install git -y > /dev/null
 
     cd /vagrant
 
