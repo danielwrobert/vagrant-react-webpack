@@ -14,7 +14,7 @@ module.exports = {
   output: {
     path: path.resolve( __dirname, 'public' ),
     publicPath: '/',
-    filename: 'main.js',
+    filename: '/js/main.js',
     sourceMapFilename: 'main.js.map'
   },
 
@@ -43,7 +43,7 @@ module.exports = {
   },
 
   plugins: [
-    new ExtractTextPlugin( 'public/styles.css', {
+    new ExtractTextPlugin( '/stylesheets/styles.css', {
       allChunks: true
     } )
   ]
