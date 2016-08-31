@@ -13,7 +13,7 @@ module.exports = {
 
   output: {
     path: path.resolve( __dirname, 'public' ),
-    publicPath: '/js/',
+    publicPath: '/',
     filename: 'main.js',
     sourceMapFilename: 'main.js.map'
   },
