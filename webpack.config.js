@@ -7,7 +7,7 @@ module.exports = {
   entry: {
     app: [
       'webpack-dev-server/client?http://localhost:8881/',
-      './app/App.js'
+      './app/app.js'
     ]
   },
 
